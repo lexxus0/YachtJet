@@ -1,0 +1,109 @@
+.hero-section {
+  background-image: url(../img/hero/hero-bg@1x-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url(../img/hero/hero-bg@2x-min.png);
+  }
+}
+
+.hero-container {
+  padding: 260px 20px 243px;
+}
+.hero-text-content-wrap {
+  margin: 0 auto;
+  max-width: 335px;
+  margin-bottom: 38px;
+}
+.hero-title {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+}
+.hero-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+}
+.hero-link {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 14px 32px;
+  width: 141px;
+  background: #1b414b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+  /* transition: all 250ms cubic-bezier(0.25, 0.1, 0.25, 1) 1ms; */
+}
+.hero-link:hover,
+.hero-link:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 280px 32px 215px;
+  }
+  .hero-text-content-wrap {
+    max-width: 704px;
+    margin-bottom: 48px;
+  }
+  .hero-title {
+    font-size: 70px;
+  }
+  .hero-text {
+    display: block;
+    padding: 0 53.5px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .hero-link {
+    padding: 16px 40px;
+    width: 179px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    padding: 235px 139px 180px;
+  }
+
+  .hero-text-content-wrap {
+    max-width: 1001px;
+    margin-bottom: 48px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .hero-text {
+    padding: 0 202px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    padding: 235px 219px 180px;
+  }
+}
+
+/* @media only screen and (min-width: 768px) */
+/* @media only screen and (min-width: 1280px)  */
+/* @media only screen and (min-width: 1440px)  */
