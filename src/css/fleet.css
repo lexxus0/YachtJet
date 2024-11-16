@@ -1,0 +1,98 @@
+.fleetWrapper {
+  margin: 0 auto;
+}
+
+.fleetTextWrapper {
+  border-radius: 24px;
+  background: #fbfbfb;
+  padding: 40px 20px;
+}
+
+.fleetText {
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+}
+
+.fleetHeading {
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+
+.fleetParagraph {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.fleetSecondParagraph {
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #040306;
+  opacity: 0.4;
+  padding-bottom: 40px;
+}
+
+.fleetSource {
+  border-radius: 24px;
+  margin-top: -50px;
+}
+
+@media screen and (min-width: 768px) {
+  .fleetHeading {
+    font-size: 48px;
+    margin-right: 70px;
+    width: 536px;
+  }
+
+  .fleetParagraph {
+    font-size: 23px;
+  }
+
+  .fleetSecondParagraph {
+    font-size: 13px;
+    line-height: 115%;
+  }
+
+  .fleetParagraph,
+  .fleetSecondParagraph {
+    margin-right: 283px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fleetHeading {
+    margin-right: 0;
+    font-size: 44px;
+  }
+
+  .fleetParagraph,
+  .fleetSecondParagraph {
+    margin-right: 0;
+    margin-left: 240px;
+    width: 354px;
+  }
+
+  .fleetTextWrapper {
+    display: flex;
+    padding: 50px 50px 85px 50px;
+  }
+
+  .fleetColumn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .fleetHeading {
+    font-size: 48px;
+  }
+  .fleetParagraph,
+  .fleetSecondParagraph {
+    margin-right: 0;
+    margin-left: 280px;
+    width: 404px;
+  }
+}
