@@ -19,13 +19,30 @@
 }
 .review-list {
 }
-.rewiew-list-item {
+.review-list-item {
+  border-radius: 24px;
+  padding: 32px 8px;
+  background: #fbfbfb;
 }
-.rewiew-item-image {
+.review-item-image {
+  margin: 0 auto 24px;
 }
-.rewiew-item-title {
+.review-item-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
 }
-.rewiew-item-text {
+.review-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
 }
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -45,21 +62,28 @@
   .review-title {
     max-width: 854px;
   }
+  .review-list-item {
+    padding: 32px 28px;
+  }
 }
 /* end Desktop S */
 /* desktop L */
 
 @media only screen and (min-width: 1440px) {
+  .review-list-item {
+    padding: 32px 36px;
+  }
 }
 
 /* 
  .review-list {
   }
-  .rewiew-list-item {
+  .review-list-item {
+  
   }
-  .rewiew-item-image {
+  .review-item-image {
   }
-  .rewiew-item-title {
+  .review-item-title {
   }
-  .rewiew-item-text {
+  .review-item-text {
   } */
