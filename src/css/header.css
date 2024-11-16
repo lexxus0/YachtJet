@@ -30,6 +30,7 @@
 }
 
 .headerButton {
+  position: relative;
   background-color: transparent;
 }
 
@@ -37,10 +38,13 @@
   width: 24px;
   height: 24px;
   stroke: black;
+  position: absolute;
+  left: -10px;
+  top: -10px;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* **** menu styles **** */
