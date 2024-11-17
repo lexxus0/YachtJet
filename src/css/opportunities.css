@@ -1,0 +1,119 @@
+.oppoList {
+  border-radius: 24px;
+  background-color: #1b414b;
+  padding: 80px 20px 40px 20px;
+  margin-bottom: 20px;
+}
+
+.oppoItem {
+  padding-bottom: 40px;
+}
+
+.oppoNum {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin-bottom: 18px;
+}
+
+.oppoNum::after {
+  margin-top: 18px;
+  content: '';
+  display: block;
+  border-radius: 18px;
+  width: 282px;
+  height: 2px;
+  background-color: rgba(251, 251, 251, 0.1);
+}
+
+.oppoParagraph {
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  opacity: 0.8;
+}
+
+.oppoSource {
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .oppoList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 90px 32px 50px 32px;
+  }
+
+  .oppoItem {
+    width: 304px;
+  }
+
+  .oppoNum {
+    font-size: 32px;
+  }
+
+  .oppoNum::after {
+    width: 304px;
+  }
+
+  .oppoParagraph {
+    font-size: 13px;
+    line-height: 115%;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .oppoWrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  .oppoList {
+    flex-direction: row;
+    width: 716px;
+    padding: 90px 50px;
+    margin-bottom: 0;
+  }
+
+  .oppoNum::after {
+    width: 280px;
+  }
+
+  .oppoParagraph {
+    margin-right: 0;
+  }
+
+  .oppoItem {
+    width: 280px;
+  }
+
+  .oppoSource {
+    width: 432px;
+    height: 424px;
+  }
+
+  .oppoItem {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .oppoList {
+    width: 768px;
+  }
+
+  .oppoSource {
+    width: 540px;
+  }
+
+  .oppoItem {
+    width: 318px;
+  }
+
+  .oppoNum::after {
+    width: 318px;
+  }
+}
