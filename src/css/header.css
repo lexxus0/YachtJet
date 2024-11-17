@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 200;
+  z-index: 10;
   border: 1px solid #fbfbfb;
   background-color: #fbfbfb;
   border-radius: 8px;
@@ -26,10 +26,11 @@
 }
 
 .headerlogo {
-  color: black;
+  color: #1b414b;
 }
 
 .headerButton {
+  position: relative;
   background-color: transparent;
 }
 
@@ -37,10 +38,13 @@
   width: 24px;
   height: 24px;
   stroke: black;
+  position: absolute;
+  left: -10px;
+  top: -10px;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* **** menu styles **** */
@@ -69,6 +73,7 @@
   opacity: 1;
   transform: translateX(0);
   visibility: visible;
+  pointer-events: auto;
 }
 
 .mobMenuButtons {
@@ -106,10 +111,24 @@
   right: 0;
 }
 
+.mobMenuLinks > svg {
+  cursor: pointer;
+}
+
+.headerLinks {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .headerWrapper {
     width: 704px;
     height: 48px;
+  }
+
+  .headerLogo {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
   }
 
   .icon,
@@ -140,8 +159,19 @@
     background: #1b414b;
   }
 
+  .headerLinks {
+    display: flex;
+    gap: 8px;
+  }
+
   .headerLinks > svg {
-    stroke: black;
+    fill: #055545;
+    cursor: pointer;
+    transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+  }
+
+  .headerLinks > svg:hover {
+    fill: #062730;
   }
 }
 

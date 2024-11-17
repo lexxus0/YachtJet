@@ -4,6 +4,9 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8" d="M4.8 27.2h67.2M4.8 4.8h67.2"></path>
 </symbol>
 <symbol id="icon-close" width="24" height="24"  viewBox="0 0 32 32">
+<path d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453 7.453-7.453z"></path>
+</symbol>
+<symbol id="icon-close" width="24" height="24"  viewBox="0 0 32 32">
 <path d="M32 3.721l-3.721-3.721-12.279 12.279-12.279-12.279-3.721 3.721 12.279 12.279-12.279 12.279 3.721 3.721 12.279-12.279 12.279 12.279 3.721-3.721-12.279-12.279 12.279-12.279z"></path>
 </symbol>
 <symbol id="icon-facebook_black" viewBox="0 0 32 32">

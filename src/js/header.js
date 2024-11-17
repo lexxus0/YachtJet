@@ -1,16 +1,15 @@
-const button = document.querySelector(".headerButton");
-const header = document.querySelector(".headerWrapper");
-const mobMenu = document.querySelector(".mobMenu");
-const icon = document.querySelector(".iconUse");
+const button = document.querySelector('.headerButton');
+const mobMenu = document.querySelector('.mobMenu');
 
 const toggleMenu = () => {
-  mobMenu.classList.toggle("isOpen");
-  header.classList.toggle("fixed");
-  if (icon.getAttribute("href") === "../img/sprite.svg#icon-burger") {
-    icon.setAttribute("href", "../img/sprite.svg#icon-close");
+  const isOpen = mobMenu.classList.toggle('isOpen');
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
   } else {
-    icon.setAttribute("href", "../img/sprite.svg#icon-burger");
+    document.body.style.overflow = '';
   }
+  document.querySelector('.iconBurger').classList.toggle('hidden');
+  document.querySelector('.iconClose').classList.toggle('hidden');
 };
 
-button.addEventListener("click", toggleMenu);
+button.addEventListener('click', toggleMenu);
