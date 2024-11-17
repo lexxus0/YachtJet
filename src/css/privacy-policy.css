@@ -1,0 +1,41 @@
+@import url('./main.css');
+@import url('./reset.css');
+@import url('./footer.css');
+
+html {
+  position: relative;
+  min-height: 100dvh;
+  overflow: scroll;
+   --bezier: 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+   --button-menu: #7a7777;
+   --button-hover:#FBFBFB;
+}
+.pp-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.pp-btn {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 24px;
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--button-menu);
+  transition: background-color var(--bezier);
+}
+
+.pp-btn:hover {
+  background-color: var(--button-hover);
+  color: #1b414b;
+
+}
+.text-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
