@@ -1,0 +1,188 @@
+/* **** header styles **** */
+
+.headerWrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid #fbfbfb;
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 0 20px;
+  width: 335px;
+  height: 42px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.headerButtons {
+  display: none;
+}
+
+.headerlogo {
+  color: #1b414b;
+}
+
+.headerButton {
+  position: relative;
+  background-color: transparent;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: black;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* **** menu styles **** */
+
+.mobMenu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #0e1823;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobMenu.isOpen {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobMenuButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.mobMenuBtn {
+  border-radius: 8px;
+  width: 91px;
+  height: 40px;
+  background-color: rgba(27, 65, 75, 0.5);
+  font-size: 9px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+}
+
+.mobMenuBtn:hover {
+  background-color: #1b414b;
+}
+
+.mobMenuLinks {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.mobMenuLinks > svg {
+  cursor: pointer;
+}
+
+.headerLinks {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .headerWrapper {
+    width: 704px;
+    height: 48px;
+  }
+
+  .headerLogo {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+  }
+
+  .icon,
+  .mobMenu,
+  .headerButton {
+    display: none;
+  }
+
+  .headerButtons {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .headerBtn {
+    font-size: 9px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fbfbfb;
+    border-radius: 8px;
+    width: 91px;
+    height: 40px;
+    transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+    background-color: rgba(27, 65, 75, 0.5);
+  }
+
+  .headerBtn:hover {
+    background: #1b414b;
+  }
+
+  .headerLinks {
+    display: flex;
+    gap: 8px;
+  }
+
+  .headerLinks > svg {
+    fill: #055545;
+    cursor: pointer;
+    transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
+  }
+
+  .headerLinks > svg:hover {
+    fill: #062730;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .headerWrapper {
+    width: 1080px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headerWrapper {
+    width: 1240px;
+  }
+}
