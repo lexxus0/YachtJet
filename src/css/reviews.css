@@ -17,9 +17,17 @@
   color: #fbfbfb;
   opacity: 0.4;
 }
+.review-swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
 .review-list {
+  display: flex;
 }
 .review-list-item {
+  min-width: 335px;
   border-radius: 24px;
   padding: 32px 8px;
   background: #fbfbfb;
@@ -55,6 +63,12 @@
     font-size: 14px;
     line-height: 1.28571;
   }
+  .review-swiper {
+    width: 704px;
+  }
+  .review-list-item {
+    min-width: 336px;
+  }
 }
 /* end tablet */
 /* desktop S */
@@ -65,6 +79,9 @@
   .review-list-item {
     padding: 32px 28px;
   }
+  .review-swiper {
+    width: 1180px;
+  }
 }
 /* end Desktop S */
 /* desktop L */
@@ -72,18 +89,10 @@
 @media only screen and (min-width: 1440px) {
   .review-list-item {
     padding: 32px 36px;
+    min-width: 392px;
+  }
+
+  .review-swiper {
+    width: 1240px;
   }
 }
-
-/* 
- .review-list {
-  }
-  .review-list-item {
-  
-  }
-  .review-item-image {
-  }
-  .review-item-title {
-  }
-  .review-item-text {
-  } */
