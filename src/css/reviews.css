@@ -82,6 +82,9 @@
   .review-swiper {
     width: 1180px;
   }
+  .review-list-item {
+    min-width: 376px;
+  }
 }
 /* end Desktop S */
 /* desktop L */
