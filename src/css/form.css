@@ -1,3 +1,6 @@
+.form-wrapper {
+  padding: 0;
+}
 .form-title {
   font-weight: 500;
   font-size: 28px;
@@ -33,7 +36,7 @@
 .form-input.comment {
   height: 108px;
   resize: none;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 .form-btn {
   border-radius: 15px;
@@ -58,19 +61,86 @@
   border-radius: 24px;
   width: 335px;
   height: 412px;
-  background-image: url(../img/form/form-img.jpg);
+  background-image: url(../img/form/form-img-mobil_1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) and (max-width: 767px) {
   .form-img-box {
-    background-image: url(../img/form/form-img@2x.jpg);
+    background-image: url(../img/form/form-img-mobil_2x.webp);
   }
 }
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    padding-left: 116px;
+    padding-right: 115px;
+  }
+  .form-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .form-input {
+    padding: 18px;
+    width: 472px;
+    height: 54px;
+  }
+  .form-input.comment {
+    height: 116px;
+    margin-bottom: 32px;
+  }
+  .form-btn {
+    padding: 18px 75px;
+    width: 194px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 110%;
+    margin-bottom: 100px;
+  }
+  .form-img-box {
+    width: 704px;
+    height: 534px;
+    background-image: url(../img/form/form-img-tablet_1x.webp);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .form-img-box {
+    background-image: url(../img/form/form-img-tablet_2x.webp);
+  }
 }
 @media screen and (min-width: 1280px) {
+  .form-wrapper {
+    padding: 0;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 50px;
+  }
+  .form-btn {
+    margin-bottom: 0;
+  }
+  .form-img-box {
+    width: 658px;
+    height: 536px;
+    background-image: url(../img/form/form-img-1280desktop_1x.webp);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 1280px) {
+  .form-img-box {
+    background-image: url(../img/form/form-img-1280desktop_2x.webp);
+  }
 }
 @media screen and (min-width: 1440px) {
-} */
+  .form-img-box {
+    width: 768px;
+    height: 536px;
+    background-image: url(../img/form/form-img-1440desktop_1x.webp);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 1440px) {
+  .form-img-box {
+    background-image: url(../img/form/form-img-1440desktop_2x.webp);
+  }
+}
