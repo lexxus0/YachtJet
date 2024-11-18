@@ -20,7 +20,7 @@
 .rental-list-items {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-wrap: nowrap;
 }
 .rental-item {
@@ -42,26 +42,44 @@
 }
 .rental-box-title {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  padding: 0px 16px;
+  margin-bottom: 16px;
 }
 .rental-box-yaht-title {
-  overflow-x: hidden;
-  font-weight: 500;
+  overflow: hidden;
   font-size: 14px;
-  line-height: 1.18;
+  font-weight: 500;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #1b414b;
 }
+.rental-box-yaht-text {
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
 .rental-box-categories {
+  padding: 0px 16px;
 }
 .rental-categories-list {
+  border-top: solid rgba(4, 3, 6, 0.1);
+  padding-top: 16px;
+}
+.rental-categories-item:nth-child(n) {
+  margin-bottom: 6px;
 }
 .rental-categories-item {
   display: flex;
   justify-content: space-between;
 }
-.rental-categories-text {
+.rental-categories {
+  text-transform: uppercase;
+  opacity: 0.4;
 }
-.rental-btn {
-}
+/* .rental-categories-text {
+} */
+/* .rental-btn {
+} */
