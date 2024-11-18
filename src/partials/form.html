@@ -1,0 +1,48 @@
+<section class="form-section">
+  <div class="container form-container">
+    <div class="form-wrapper">
+      <h2 class="form-title">Rent a yacht now</h2>
+      <form class="form">
+        <input
+          type="text"
+          class="form-input"
+          name="user-name"
+          pattern="[A-Za-zА-Яа-яЁё\s]{2,30}"
+          title="John"
+          placeholder="Full Name"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="email"
+          class="form-input"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          title="example@gmail.com"
+          placeholder="Email"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="tel"
+          class="form-input"
+          name="user-phone"
+          pattern="\+?[0-9\s\-\(\)]+"
+          title="+380 12 345 67 89"
+          placeholder="Phone number"
+          autocomplete="off"
+          required
+        />
+        <textarea
+          name="user-comment"
+          class="form-input comment"
+          placeholder="Comment"
+          autocomplete="off"
+          required
+        ></textarea>
+        <button class="form-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="form-img-box"></div>
+  </div>
+</section>
