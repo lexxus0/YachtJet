@@ -16,22 +16,20 @@
   letter-spacing: -0.02em;
   color: #fbfbfb;
   margin-bottom: 40px;
-}
-.rental-list-items {
-  display: flex;
-  flex-direction: row;
-  /* overflow: hidden; */
-  flex-wrap: nowrap;
+  padding: 0 15px;
+  text-align: center;
 }
 .rental-item {
-  min-width: 100%;
   background-color: #fbfbfb;
   border-radius: 24px;
+}
+.swiper-slide.rental-item {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .rental-box-card {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
   flex-wrap: nowrap;
   padding: 16px 16px 32px 16px;
 }
