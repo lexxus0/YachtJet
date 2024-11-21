@@ -55,6 +55,7 @@
   .footer-menu {
     flex-direction: row;
     justify-content: space-between;
+    align-items:flex-start ;
     padding-top: 50px;
   }
 }
@@ -69,17 +70,17 @@
 font-weight: 500;
 font-size: 20px;
 letter-spacing: -0.03em;
-padding-right: 108px;
+padding-right: 113px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer-logo {
-padding-right: 356px;
+padding-right: 375px;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-logo {
-padding-right: 446px;
+padding-right: 490px;
   }
 }
 
