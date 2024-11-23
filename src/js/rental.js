@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css';
+import 'swiper/css/bundle';
 
 const swiper = new Swiper('.rental-swiper', {
   direction: 'horizontal',
@@ -12,18 +12,16 @@ const swiper = new Swiper('.rental-swiper', {
       slidesPerView: 2,
     },
     1280: {
-      enabled: false,
       spaceBetween: 25,
       slidesPerView: 3,
     },
     1440: {
-      enabled: false,
       spaceBetween: 32,
       slidesPerView: 3,
     },
   },
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false,
   },
-  preventClicks: true,
 });

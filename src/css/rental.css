@@ -1,7 +1,5 @@
 /* Main styles for rental section */
 .rental-section {
-  padding: 75px 0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -29,8 +27,8 @@
 }
 .rental-box-card {
   display: flex;
+  width: auto;
   flex-direction: column;
-  flex-wrap: nowrap;
   padding: 16px 16px 32px 16px;
 }
 .rental-box-img {
@@ -44,6 +42,10 @@
   justify-content: space-between;
   /* padding: 0px 16px; */
   margin-bottom: 16px;
+}
+
+.rental-swiper {
+  overflow: hidden;
 }
 .rental-box-yaht-title {
   white-space: nowrap;
@@ -178,7 +180,10 @@
   .rental-box-yaht-text {
     line-height: 1.18;
   }
+
   .rental-swiper {
-    padding: 0 50px;
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 }

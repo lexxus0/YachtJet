@@ -2,9 +2,8 @@
   background-color: #1b414b;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
-  /* width: 100%; */
+  max-width: 375px;
+  margin: 0 auto;
 
   --bezier: 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
   --button-menu: rgba(251, 251, 251, 0.3);
@@ -13,9 +12,7 @@
 }
 @media only screen and (min-width: 768px) {
   .footer {
-    margin-left: 25px;
-    margin-right: 25px;
-
+    max-width: 768px;
   }
 }
 
@@ -25,7 +22,6 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
@@ -33,12 +29,10 @@
     justify-content: space-between;
     padding-left: 64px;
     padding-right: 64px;
-
   }
 }
 @media only screen and (min-width: 1280px) {
   .footer-container {
-    /* width: 100%; */
     padding-left: 75px;
     padding-right: 75px;
   }
@@ -49,7 +43,6 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 40px;
-
 }
 @media only screen and (min-width: 768px) {
   .footer-menu {
@@ -62,24 +55,23 @@
   font-size: 14px;
   font-weight: 600;
   padding-right: 15px;
-
 }
 @media screen and (min-width: 768px) {
   .footer-logo {
-font-weight: 500;
-font-size: 20px;
-letter-spacing: -0.03em;
-padding-right: 108px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer-logo {
-padding-right: 356px;
+    padding-right: 356px;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-logo {
-padding-right: 446px;
+    padding-right: 446px;
   }
 }
 
@@ -90,25 +82,34 @@ padding-right: 446px;
 }
 
 .footer-menu-item {
-  font-weight: 400;
   font-size: 9px;
   line-height: 130%;
   text-transform: uppercase;
   text-align: center;
-  color: var(--main-text);
   border-radius: 8px;
-  padding: 12px 15px;
+  padding: 15px;
   background-color: var(--button-menu);
   width: 66px;
   height: 40px;
   margin-top: 0;
   margin-bottom: 80px;
+  cursor: pointer;
+  transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
 }
-@media only screen and (min-width: 768px) {
-  .footer-menu-item {
 
+.footer-menu-item:hover {
+  color: black;
+  background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-menu-list {
+    margin-left: 55px;
+  }
+  .footer-menu-item {
     margin-bottom: 92px;
-}}
+  }
+}
 .footer-social-list {
   display: flex;
   justify-content: center;
@@ -133,19 +134,25 @@ padding-right: 446px;
     letter-spacing: -0.02em;
     text-align: center;
     padding: 0 48px 99px;
-
   }
 }
 @media only screen and (min-width: 1280px) {
+  .footer {
+    max-width: 1280px;
+  }
   .footer-text {
     padding: 0 268px 99px;
-
   }
 }
 @media only screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+  }
+  .footer-menu-list {
+    margin-left: 50px;
+  }
   .footer-text {
     padding: 0 346px 99px;
-
   }
 }
 .footer-nav-list {

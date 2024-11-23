@@ -47,6 +47,13 @@
   display: none;
 }
 
+.headerLink {
+  border-radius: 8px;
+  width: 91px;
+  height: 40px;
+  padding: 12px 25px;
+}
+
 /* **** menu styles **** */
 
 .mobMenu {
@@ -94,6 +101,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
+  padding: 15px;
   transition: all 700ms cubic-bezier(0.42, 0, 0.61, 0.97) 0s;
 }
 
@@ -147,7 +155,6 @@
     line-height: 130%;
     text-transform: uppercase;
     text-align: center;
-    color: #fbfbfb;
     border-radius: 8px;
     width: 91px;
     height: 40px;
@@ -178,6 +185,11 @@
 @media screen and (min-width: 1280px) {
   .headerWrapper {
     width: 1080px;
+  }
+
+  .headerLink {
+    padding: 13px 25px;
+    margin-top: -2px;
   }
 }
 
