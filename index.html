@@ -17,9 +17,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>YachtJet</title>
   <script type="module" crossorigin src="/YachtJet/commonHelpers2.js"></script>
-  <link rel="modulepreload" crossorigin href="/YachtJet/assets/vendor-DyDm9aqL.js">
-  <link rel="stylesheet" crossorigin href="/YachtJet/assets/vendor-BMyFg127.css">
-  <link rel="stylesheet" crossorigin href="/YachtJet/assets/index-DcWgiKwL.css">
+  <link rel="modulepreload" crossorigin href="/YachtJet/assets/vendor-8mki8isw.js">
+  <link rel="stylesheet" crossorigin href="/YachtJet/assets/vendor-BUrcyj0q.css">
+  <link rel="stylesheet" crossorigin href="/YachtJet/assets/index-DSduJBFs.css">
 </head>
 
 <body>
@@ -27,9 +27,12 @@
   <div class="container headerWrapper">
     <span class="headerlogo">yachtjet</span>
     <div class="headerButtons">
-      <button type="button" class="headerBtn">about</button>
-      <button type="button" class="headerBtn">yachts</button>
-      <button type="button" class="headerBtn">reviews</button>
+      <div class="headerButtons">
+        <a href="#fleet" class="headerBtn headerLink">about</a>
+        <a href="#rent-yacht" class="headerBtn headerLink">yachts</a>
+        <a href="#reviews" class="headerBtn headerLink">reviews</a>
+      </div>
+
     </div>
     <div class="headerLinks">
       <svg width="22" height="22">
@@ -53,9 +56,9 @@
   </div>
   <div class="mobMenu">
     <div class="mobMenuButtons">
-      <button type="button" class="mobMenuBtn">about</button>
-      <button type="button" class="mobMenuBtn">yachts</button>
-      <button type="button" class="mobMenuBtn">reviews</button>
+      <a href="#fleet" class="mobMenuBtn">about</a>
+      <a href="#rent-yacht" class="mobMenuBtn">yachts</a>
+      <a href="#reviews" class="mobMenuBtn">reviews</a>
     </div>
     <div class="mobMenuLinks">
       <svg width="22" height="22">
@@ -88,7 +91,7 @@
   </div>
 </section>
 
-    <section>
+    <section id="fleet">
   <div class="fleetWrapper container">
     <div class="fleetTextWrapper">
       <h2 class="fleetText fleetHeading">
@@ -119,7 +122,7 @@
     </picture>
   </div>
 </section>
-    <section class="section rental-section">
+    <section class="section rental-section" id="rent-yacht">
   <div class="container rental-container">
     <h2 class="rental-title">
       Choose your dream yacht and sail away into the sunset
@@ -130,20 +133,12 @@
           <div class="rental-box-card">
             <div class="rental-box-img">
               <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="../img/rental/arrow-d-1440@2x.jpg 2x, ../img/rental/arrow-d-1440.jpg 1x" />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="../img/rental/arrow-d-@2x.jpg 2x, ../img/rental/arrow-d.jpg 1x" />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="../img/rental/arrow-t-@2x.jpg 2x, ../img/rental/arrow-t.jpg 1x" />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="../img/rental/arrow-m-@2x.jpg 2x, ../img/rental/arrow-m.jpg 1x" />
-                <img src="../img/rental/arrow-m.jpg" alt="Photo Arrow yaht"
-              /></picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/arrow-d-1440@2x-BeAF2o3Q.jpg 2x, /YachtJet/assets/arrow-d-1440-Cd3Oe1B4.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/arrow-d-@2x-xcKZ-jn4.jpg 2x, /YachtJet/assets/arrow-d-Cxgfge8U.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/arrow-t-@2x-vEWcv_NU.jpg 2x, /YachtJet/assets/arrow-t-CJcqH3r1.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/arrow-m-@2x-B-TQEeVz.jpg 2x, /YachtJet/assets/arrow-m-BZ9FdcNb.jpg 1x" />
+                <img src="/YachtJet/assets/arrow-m-BZ9FdcNb.jpg" class="fuck" alt="Photo Arrow yaht" />
+              </picture>
             </div>
             <div class="rental-box-title">
               <h3 class="rental-box-yaht-title">arrow</h3>
@@ -179,22 +174,12 @@
           <div class="rental-box-card">
             <div class="rental-box-img">
               <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="../img/rental/benetti-d-1440@2x.jpg 2x, ../img/rental/benetti-d-1440.jpg 1x" />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="../img/rental/benetti-d-@2x.jpg 2x, ../img/rental/benetti-d.jpg 1x" />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="../img/rental/benetti-t-@2x.jpg 2x, ../img/rental/benetti-t.jpg 1x" />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="../img/rental/benetti-m-@2x.jpg 2x, ../img/rental/benetti-m.jpg 1x" />
-                <img
-                  src="../img/rental/benetti-m.jpg"
-                  alt="Photo BENETTI OASIS yaht"
-              /></picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/benetti-d-1440@2x-Q71AEEXq.jpg 2x, /YachtJet/assets/benetti-d-1440-CUZnPbWj.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/benetti-d-@2x-DWnM8xke.jpg 2x, /YachtJet/assets/benetti-d-dXv5Oqom.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/benetti-d-@2x-DWnM8xke.jpg 2x, /YachtJet/assets/benetti-d-dXv5Oqom.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/benetti-m-@2x-C8wMggEQ.jpg 2x, /YachtJet/assets/benetti-m-D97m9HDY.jpg 1x" />
+                <img src="/YachtJet/assets/benetti-m-D97m9HDY.jpg" alt="Photo BENETTI OASIS yaht" />
+              </picture>
             </div>
             <div class="rental-box-title">
               <h3 class="rental-box-yaht-title">BENETTI OASIS 40M BO122</h3>
@@ -230,22 +215,135 @@
           <div class="rental-box-card">
             <div class="rental-box-img">
               <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="../img/rental/belle-d-1440@2x.jpg 2x, ../img/rental/belle-d-1440.jpg 1x" />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="../img/rental/belle-d-@2x.jpg 2x, ../img/rental/belle-d.jpg 1x" />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="../img/rental/belle-t-@2x.jpg 2x, ../img/rental/belle-t.jpg 1x" />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="../img/rental/belle-m-@2x.jpg 2x, ../img/rental/belle-m.jpg 1x" />
-                <img
-                  src="../img/rental/belle-m.jpg"
-                  alt="Photo BELLE ANNA yaht"
-              /></picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/belle-d-1440@2x-CT0OgMEe.jpg 2x, /YachtJet/assets/belle-d-1440-QjQL4n3p.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/belle-d-@2x-CcYyMyiV.jpg 2x, /YachtJet/assets/belle-d-BLbNMNsb.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/belle-d-@2x-CcYyMyiV.jpg 2x, /YachtJet/assets/belle-d-BLbNMNsb.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/belle-m-@2x-BTEDFdDr.jpg 2x, /YachtJet/assets/belle-m-Dl-t6EC6.jpg 1x" />
+                <img src="/YachtJet/assets/belle-m-Dl-t6EC6.jpg" alt="Photo BELLE ANNA yaht" />
+              </picture>
+            </div>
+            <div class="rental-box-title">
+              <h3 class="rental-box-yaht-title">BELLE ANNA</h3>
+              <p class="rental-box-yaht-text">luxury yahts</p>
+            </div>
+            <div class="rental-box-categories">
+              <ul class="rental-categories-list">
+                <li class="rental-categories-item">
+                  <p class="rental-categories">length</p>
+                  <p class="rental-categories-text">50m(155ft)</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">builder</p>
+                  <p class="rental-categories-text">ISA</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">built</p>
+                  <p class="rental-categories-text">2012</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">guests</p>
+                  <p class="rental-categories-text">12 in 6 cabins</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">price</p>
+                  <p class="rental-categories-text">€21,000,000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="rental-item swiper-slide">
+          <div class="rental-box-card">
+            <div class="rental-box-img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/arrow-d-1440@2x-BeAF2o3Q.jpg 2x, /YachtJet/assets/arrow-d-1440-Cd3Oe1B4.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/arrow-d-@2x-xcKZ-jn4.jpg 2x, /YachtJet/assets/arrow-d-Cxgfge8U.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/arrow-t-@2x-vEWcv_NU.jpg 2x, /YachtJet/assets/arrow-t-CJcqH3r1.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/arrow-m-@2x-B-TQEeVz.jpg 2x, /YachtJet/assets/arrow-m-BZ9FdcNb.jpg 1x" />
+                <img src="/YachtJet/assets/arrow-m-BZ9FdcNb.jpg" alt="Photo Arrow yaht" />
+              </picture>
+            </div>
+            <div class="rental-box-title">
+              <h3 class="rental-box-yaht-title">arrow</h3>
+              <p class="rental-box-yaht-text">luxury yahts</p>
+            </div>
+            <div class="rental-box-categories">
+              <ul class="rental-categories-list">
+                <li class="rental-categories-item">
+                  <p class="rental-categories">length</p>
+                  <p class="rental-categories-text">48m(155ft)</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">builder</p>
+                  <p class="rental-categories-text">Admiral</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">built</p>
+                  <p class="rental-categories-text">2021</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">guests</p>
+                  <p class="rental-categories-text">11 in 5 cabins</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">price</p>
+                  <p class="rental-categories-text">€33,500,000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="rental-item swiper-slide">
+          <div class="rental-box-card">
+            <div class="rental-box-img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/benetti-d-1440@2x-Q71AEEXq.jpg 2x, /YachtJet/assets/benetti-d-1440-CUZnPbWj.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/benetti-d-@2x-DWnM8xke.jpg 2x, /YachtJet/assets/benetti-d-dXv5Oqom.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/benetti-d-@2x-DWnM8xke.jpg 2x, /YachtJet/assets/benetti-d-dXv5Oqom.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/benetti-m-@2x-C8wMggEQ.jpg 2x, /YachtJet/assets/benetti-m-D97m9HDY.jpg 1x" />
+                <img src="/YachtJet/assets/benetti-m-D97m9HDY.jpg" alt="Photo BENETTI OASIS yaht" />
+              </picture>
+            </div>
+            <div class="rental-box-title">
+              <h3 class="rental-box-yaht-title">BENETTI OASIS 40M BO122</h3>
+              <p class="rental-box-yaht-text">luxury yahts</p>
+            </div>
+            <div class="rental-box-categories">
+              <ul class="rental-categories-list">
+                <li class="rental-categories-item">
+                  <p class="rental-categories">length</p>
+                  <p class="rental-categories-text">41m (133ft)</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">builder</p>
+                  <p class="rental-categories-text">Benetti</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">built</p>
+                  <p class="rental-categories-text">2025</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">guests</p>
+                  <p class="rental-categories-text">10 in 5 cabins</p>
+                </li>
+                <li class="rental-categories-item">
+                  <p class="rental-categories">price</p>
+                  <p class="rental-categories-text">€23,210,000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="rental-item swiper-slide">
+          <div class="rental-box-card">
+            <div class="rental-box-img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="/YachtJet/assets/belle-d-1440@2x-CT0OgMEe.jpg 2x, /YachtJet/assets/belle-d-1440-QjQL4n3p.jpg 1x" />
+                <source media="(min-width: 1280px)" srcset="/YachtJet/assets/belle-d-@2x-CcYyMyiV.jpg 2x, /YachtJet/assets/belle-d-BLbNMNsb.jpg 1x" />
+                <source media="(min-width: 768px)" srcset="/YachtJet/assets/belle-d-@2x-CcYyMyiV.jpg 2x, /YachtJet/assets/belle-d-BLbNMNsb.jpg 1x" />
+                <source media="(max-width: 768px)" srcset="/YachtJet/assets/belle-m-@2x-BTEDFdDr.jpg 2x, /YachtJet/assets/belle-m-Dl-t6EC6.jpg 1x" />
+                <img src="/YachtJet/assets/belle-m-Dl-t6EC6.jpg" alt="Photo BELLE ANNA yaht" />
+              </picture>
             </div>
             <div class="rental-box-title">
               <h3 class="rental-box-yaht-title">BELLE ANNA</h3>
@@ -284,7 +382,6 @@
     </div>
   </div>
 </section>
-
     <section>
   <div class="container oppoWrapper">
     <div class="oppoList">
@@ -369,7 +466,7 @@
   </div>
 </section>
 
-    <section class="review-section section" id="review">
+    <section class="review-section section" id="reviews">
   <div class="container review-container">
     <h2 class="review-title">
       YachtJet take pride in providing the best possible service and experience
@@ -383,14 +480,8 @@
     <div class="review-swiper">
       <ul class="review-list">
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client1@2x-2CX5chOx.png"
-            src="/YachtJet/assets/client1@1x-QdAIgQrY.png"
-            alt="client 1"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client1@2x-2CX5chOx.png" src="/YachtJet/assets/client1@1x-QdAIgQrY.png"
+            alt="client 1" width="56" height="56" />
           <h3 class="review-item-title">John Wax</h3>
           <p class="review-item-text">
             The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -399,14 +490,8 @@
           </p>
         </li>
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client2@2x-pnJ3GSEk.png"
-            src="/YachtJet/assets/client2@1x-C2SNXppV.png"
-            alt="client 2"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client2@2x-pnJ3GSEk.png" src="/YachtJet/assets/client2@1x-C2SNXppV.png"
+            alt="client 2" width="56" height="56" />
           <h3 class="review-item-title">Victoria Romashenko</h3>
           <p class="review-item-text">
             The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -415,14 +500,8 @@
           </p>
         </li>
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client3@2x-QEyofeT0.png"
-            src="/YachtJet/assets/client3@1x-BJk2hifI.png"
-            alt="client 3"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client3@2x-QEyofeT0.png" src="/YachtJet/assets/client3@1x-BJk2hifI.png"
+            alt="client 3" width="56" height="56" />
           <h3 class="review-item-title">Ihor Trachuk</h3>
           <p class="review-item-text">
             The Azimut 80 was the most luxurious yacht I've ever been on. The
@@ -431,14 +510,8 @@
           </p>
         </li>
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client1@2x-2CX5chOx.png"
-            src="/YachtJet/assets/client1@1x-QdAIgQrY.png"
-            alt="client 1"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client1@2x-2CX5chOx.png" src="/YachtJet/assets/client1@1x-QdAIgQrY.png"
+            alt="client 1" width="56" height="56" />
           <h3 class="review-item-title">John Wax</h3>
           <p class="review-item-text">
             The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -447,14 +520,8 @@
           </p>
         </li>
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client2@2x-pnJ3GSEk.png"
-            src="/YachtJet/assets/client2@1x-C2SNXppV.png"
-            alt="client 2"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client2@2x-pnJ3GSEk.png" src="/YachtJet/assets/client2@1x-C2SNXppV.png"
+            alt="client 2" width="56" height="56" />
           <h3 class="review-item-title">Victoria Romashenko</h3>
           <p class="review-item-text">
             The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -463,14 +530,8 @@
           </p>
         </li>
         <li class="review-list-item">
-          <img
-            class="review-item-image"
-            srcset="/YachtJet/assets/client3@2x-QEyofeT0.png"
-            src="/YachtJet/assets/client3@1x-BJk2hifI.png"
-            alt="client 3"
-            width="56"
-            height="56"
-          />
+          <img class="review-item-image" srcset="/YachtJet/assets/client3@2x-QEyofeT0.png" src="/YachtJet/assets/client3@1x-BJk2hifI.png"
+            alt="client 3" width="56" height="56" />
           <h3 class="review-item-title">Ihor Trachuk</h3>
           <p class="review-item-text">
             The Azimut 80 was the most luxurious yacht I've ever been on. The
@@ -482,7 +543,6 @@
     </div>
   </div>
 </section>
-
   </main>
 
   <footer class="footer">
@@ -491,40 +551,31 @@
       <ul class="footer-menu-list">
         <li><a class="footer-logo">yachtjet</a></li>
         <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#about" onclick="this.blur();">
-            About</a
-          >
+          <a href="#fleet" class="footerLink">about</a>
         </li>
         <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#" onclick="this.blur();">
-            Yachts</a
-          >
+          <a href="#rent-yacht" class="footerLink">yachts</a>
         </li>
         <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#reviews" onclick="this.blur();">
-            Reviews</a
-          >
+          <a href="#reviews" class="footerLink">reviews</a>
         </li>
       </ul>
       <div class="footer-social-container">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="" class="footer-sotial-link"
-              ><svg class="footer-sotial-icon" width="19" height="19">
+            <a href="" class="footer-sotial-link"><svg class="footer-sotial-icon" width="19" height="19">
                 <use href="/YachtJet/assets/sprite-qqaht1bs.svg#icon-insta_white"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="" class="footer-sotial-link"
-              ><svg class="footer-sotial-icon" width="19" height="19">
+            <a href="" class="footer-sotial-link"><svg class="footer-sotial-icon" width="19" height="19">
                 <use href="/YachtJet/assets/sprite-qqaht1bs.svg#icon-youtube_white"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="" class="footer-sotial-link"
-              ><svg class="footer-sotial-icon" width="19" height="19">
+            <a href="" class="footer-sotial-link"><svg class="footer-sotial-icon" width="19" height="19">
                 <use href="/YachtJet/assets/sprite-qqaht1bs.svg#icon-facebook_white"></use>
               </svg>
             </a>
@@ -538,18 +589,11 @@
     </h3>
     <nav class="footer-nav-list">
       <p class="footer-nav-item">2023. Yacht Adventures</p>
-      <a
-        class="footer-nav-item"
-        href="./privacy-policy.html"
-        class="nav-link-footer"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Privacy Policy</a
-      >
+      <a class="footer-nav-item" href="./privacy-policy.html" class="nav-link-footer" target="_blank"
+        rel="noopener noreferrer">Privacy Policy</a>
     </nav>
   </div>
 </footer>
-
 
 </body>
 
